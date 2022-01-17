@@ -1,0 +1,330 @@
+*, *:before, *:after {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+.global-wrapper {
+  margin: 0;
+  padding:20px 0px 0px 0px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-image: url(./pasapalabra_background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.game-wrapper{
+  position: relative;
+  text-align: center;
+}
+
+.words {
+  margin: 0 auto;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.letter {
+  border: 1px solid white;
+  position: absolute;
+  color: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #254bf6;
+  line-height: 45px;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px #191b29;
+  transition: all ease-in-out 0.3s;
+}
+
+.current-letter {
+  transform: scale(1.4);
+  background-color: #459efd;
+  opacity: 0.8;
+}
+
+.green-letter {
+  background-color: #41d747;
+}
+
+.red-letter {
+  background-color: #eb235f;
+}
+
+.score-green, .score-red {
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 275px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 26px;
+  text-shadow: 2px 2px 2px #191b29;
+  border: 2px solid white;
+}
+
+.score-green {
+  background: #41d747;
+  left: calc(50% + 54px);
+}
+
+.score-red {
+  background: #eb235f;
+  left: calc(50% - 104px);
+}
+
+.timer {
+  color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 240px;
+  left: calc(50% - 60px);
+  text-align: center;
+  line-height: 110px;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #191b29;
+  border: 3px solid white;
+  background-color: #3499d5;
+}
+
+.buttons {
+  margin: 0 auto;
+}
+
+.cbutton {
+  all: unset;
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px 20px;
+  background:#2e4aed;
+  border-radius: 8px;
+  color: white;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.2s;
+}
+
+.cbutton:hover {
+  opacity: 0.8;
+  transition: all ease-in-out 0.2s;
+}
+
+.start-button {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.answer-input, .player-name {
+  height: 40px;
+  width: 200px;
+  line-height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 1px solid #2e4aed;
+  padding-left: 10px;
+}
+
+.player-info-text, .welcome-player {
+  color: white;
+  text-shadow: 2px 2px 2px #191b29;
+  font-size: 22px;
+}
+
+.question-text {
+  color: white;
+  text-shadow: 2px 2px 2px #191b29;
+  margin: 0 auto 4px auto;
+  font-size: 23px;
+  width: 1000px;
+  height: 80px;
+  background-color: rgb(23, 39, 121, 0.3);
+  border-radius: 16px;
+}
+
+.ranking-wrapper {
+  position:absolute;
+  top:30px;
+  left: 30px;
+  color: white;
+  text-shadow: 2px 2px 2px #191b29;
+  margin: 0 auto 4px auto;
+  font-size: 18px;
+  background-color: rgb(23, 39, 121, 0.3);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+
+.player-info, .welcome-player {
+  padding-top: 20px;
+}
+
+.right-answer {
+  color:white;
+  text-shadow: 2px 2px 2px #191b29;
+  background-color: rgb(215, 59, 97, 0.7);
+  border-radius: 16px;
+  display:inline-block;
+  padding: 8px 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* A partir de aquí damos estilos a las letras para posicionarlas */
+
+.letter0 { /*A*/
+  top: 0px;
+  left: 275px;
+}
+
+.letter1 { /*B*/
+  top: 9px;
+  left: 348px;
+}
+.letter2 { /*C*/
+  top: 38px;
+  left: 415px;
+
+}
+.letter3 { /*D*/
+  top: 82px;
+  left: 470px;
+
+}
+.letter4 { /*E*/
+  top: 140px;
+  left: 515px;
+
+}
+.letter5 { /*F*/
+  top: 208px;
+  left: 540px;
+
+}
+
+.letter6 { /*G*/
+  top: 275px;
+  left: 550px;
+
+}
+
+.letter7 { /*H*/
+  top: 340px;
+  left: 540px;
+
+}
+
+.letter8 { /*I*/
+  top: 400px;
+  left: 517px;
+
+}
+
+.letter9 { /*J*/
+  top: 455px;
+  left: 480px;
+
+}
+
+.letter10 { /*L*/
+  top: 500px;
+  left: 430px;
+
+}
+
+.letter11 { /*M*/
+  top: 530px;
+  left: 375px;
+
+}
+
+.letter12 { /*N*/
+  top: 546px;
+  left: 308px;
+
+}
+
+.letter13 { /*Ñ*/
+  top: 546px;
+  right: 310px;
+
+}
+
+.letter14 { /*O*/
+  top: 530px;
+  right: 375px;
+}
+
+.letter15 { /*P*/
+  top: 500px;
+  right: 430px;
+
+}
+.letter16 { /*Q*/
+  top: 455px;
+  right: 480px;
+
+}
+.letter17 { /*R*/
+  top: 400px;
+  right: 517px;
+
+}
+.letter18 { /*S*/
+  top: 340px;
+  right: 540px;
+
+}
+
+.letter19 { /*T*/
+  top: 275px;
+  right: 550px;
+
+}
+
+.letter20 { /*U*/
+  top: 208px;
+  right: 540px;
+
+}
+
+.letter21 { /*V*/
+  top: 140px;
+  right: 515px;
+
+}
+
+.letter22 { /*X*/
+  top: 82px;
+  right: 470px;
+
+}
+.letter23 { /*Y*/
+  top: 38px;
+  right: 415px;
+
+}
+.letter24 { /*Z*/
+  top: 9px;
+  right: 348px;
+
+}

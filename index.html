@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasapalabra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- conector fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- conector fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <!-- fuente de google -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="global-wrapper">
+    <div class="game-wrapper">
+      <div class="words">
+        <!--Las letras se generan de forma dinamica-->
+      </div>
+
+      <div class="score-red">0</div>
+      <div class="score-green">0</div>
+      <div class="timer">0</div>
+
+      <div class="question-panel hidden">
+        <div class="questions">
+          <div class="question-text">PREGUNTAS</div>
+          <input type="text" class="answer-input">
+        </div>
+
+        <div class="welcome-player hidden">Pulse el botón empezar cuando esté listo</div>
+
+        <div class="buttons">
+          <button class="start-button cbutton">Empezar</button>
+          <button class="answer-verify cbutton">validar</button>
+          <button class="pass-button cbutton">Pasapalabra</button>
+          <button class="end-game cbutton">Finalizar juego</button>
+        </div>
+
+        <div class="right-answer hidden"></div>
+      </div>
+
+      <div class="player-info">
+        <div class="player-info-text">Introduzca su nombre:</div>
+        <input type="text" class="player-name">
+        <button class="player-name-button cbutton">Continuar</button>
+      </div>
+    </div>
+    <div class="ranking-wrapper hidden">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
